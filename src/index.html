@@ -1,0 +1,127 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords"
+        content="Renato Lopes, renatolopes, renato lopes web, renato7lopes, renato_lopes_oliveira, webdesign, frontend, web, site, html, css, java script" />
+    <meta name="author" content="Renato Lopes" />
+    <meta name="description" content="Web-design · Front-end Developer" />
+    <meta property="og:url" content="https://www.natolopes.com.br/" />
+    <meta property="og:title" content="Renato Lopes" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.natolopes.com.br/assets/images/renato-lopes-web.png" />
+    <meta property="og:image:secure_url" content="https://www.natolopes.com.br/assets/images/renato-lopes-web.png" />
+    <meta property="og:site_name" content="Renato Lopes" />
+    <meta property="og:description" content="Renato Lopes" />
+    <meta name="theme-color" content="#231f20" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" media="all" />
+    <title>Renato Lopes</title>
+</head>
+
+
+
+
+
+<body>
+    <header>
+        <h1>
+            <span class="span-a">W</span><span class="span-b">E</span><span class="span-c">B</span>
+        </h1>
+        <div class="header-reload">
+            <i class="fas fa-sync-alt"></i>
+        </div>
+    </header>
+    <section class="about" name="about">
+        <article>
+            <!-- <img src="./assets/images/renato-lopes-web.png" alt="Renato Lopes"> -->
+            <p>
+                Meu nome é <strong>Renato Lopes</strong> e trabalho com <strong>web</strong> desde 2009, experiente em
+                Front-end e Web-design. Minha trajetória inclui experiências em várias empresas ao longo dos anos, o que
+                me proporcionou um amplo aprendizado e a oportunidade de conhecer pessoas incríveis! Aguardo seu contato nos links:
+            </p>
+            <div class="links-cards">
+                <a href="https://www.linkedin.com/in/renatolopesoliveira" target="_blank" alt="Linkedin"
+                    title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/renatolopesoliveira" target="_blank" alt="Github" title="Github"><i
+                        class="fab fa-github-alt"></i></a>
+                <a href="https://www.instagram.com/renato_lopes_web" target="_blank" alt="Instagram"
+                    title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" alt="E-mail" title="Copiar E-mail"
+                    onclick="copyEmail('renato.ldeoliveira@gmail.com')"><i class="far fa-envelope"></i></a>
+            </div>
+        </article>
+        <div class="email">E-mail copiado!</div>
+    </section>
+    <resume></resume>
+
+    <script>
+
+        const spanA = document.querySelectorAll('span');
+        (function () {
+            spanA.forEach(item =>{
+                item.classList.add('span-show');
+            })
+            setTimeout(() => {
+                spanA.forEach(item=>{
+                    item.classList.add('span-position');
+                })
+            }, 1000);
+        })();
+
+        (function () {
+            const reload = document.querySelector('.header-reload');
+            reload.addEventListener('click', ()=>{
+                spanA.forEach(item=>{
+                    item.classList.add('span-replay');
+                });
+                setTimeout(() => {
+                spanA.forEach(item=>{
+                    item.classList.remove('span-replay');
+                });
+            }, 3000);
+            })})();
+
+        const url = 'http://www.natolopes.com.br/index.html'
+        if (document.URL.indexOf(url + '#curriculo') >= 0) {
+            document.querySelector('resume').innerHTML =
+                `
+            <section class="resume resume-show" id="curriculo">
+                <div>
+                    <h2>Currículo</h2>
+                    <p class="btn btn-primary"><a href="./assets/download/renato-lopes.pdf">renato-lopes.pdf (33KB)</a></p>
+                    <p class="btn btn-secondary"><a href="#" onclick="closeResume()">Página Inicial</a></p>
+                </div>
+            </section>
+            `
+            document.title = 'Renato Lopes - Currículo';
+            document.body.style.overflow = 'hidden';
+            document.querySelector('.resume-show').style.opacity = 1;
+        }
+        function copyEmail(email) {
+            const emailCopy = document.querySelector('.email');
+            navigator.clipboard.writeText(email);
+            emailCopy.classList.add('email-show');
+            setTimeout(() => {
+                emailCopy.classList.remove('email-show');
+            }, "700");
+        }
+        function closeResume() {
+            const resumeContent = document.querySelector('.resume');
+            resumeContent.style.opacity = 0;
+            resumeContent.classList.remove('resume-show');
+            document.body.style.overflow = 'visible';
+            document.title = 'Renato Lopes';
+        }
+    </script>
+
+</body>
+</html>
