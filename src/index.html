@@ -45,7 +45,9 @@
             <p>
                 Meu nome é <strong>Renato Lopes</strong> e trabalho com <strong>web</strong> desde 2009, experiente em
                 Front-end e Web-design. Minha trajetória inclui experiências em várias empresas ao longo dos anos, o que
-                me proporcionou um amplo aprendizado e a oportunidade de conhecer pessoas incríveis! Aguardo seu contato nos links:
+                me proporcionou um amplo aprendizado. Estou sempre em busca de aprimorar minhas habilidades e, além
+                disso, estou aqui para ajudar e compartilhar meu conhecimento, aguardo
+                seu contato nos links:
             </p>
             <div class="links-cards">
                 <a href="https://www.linkedin.com/in/renatolopesoliveira" target="_blank" alt="Linkedin"
@@ -89,21 +91,27 @@
             }, 3000);
             })})();
 
-        const url = 'http://www.natolopes.com.br/index.html'
-        if (document.URL.indexOf(url + '#curriculo') >= 0) {
+            if (document.URL.indexOf('https://www.natolopes.com.br/index.html#curriculo') >= 0) {
             document.querySelector('resume').innerHTML =
                 `
             <section class="resume resume-show" id="curriculo">
                 <div>
                     <h2>Currículo</h2>
-                    <p class="btn btn-primary"><a href="./assets/download/renato-lopes.pdf">renato-lopes.pdf (33KB)</a></p>
-                    <p class="btn btn-secondary"><a href="#" onclick="closeResume()">Página Inicial</a></p>
+                    <p class="btn btn-primary"><a href="./assets/download/curriculo-renato-lopes.pdf">renato-lopes.pdf (33KB)</a></p>
+                    <p class="btn btn-secondary"><a onclick="closeResume()">Página Inicial</a></p>
                 </div>
             </section>
             `
             document.title = 'Renato Lopes - Currículo';
             document.body.style.overflow = 'hidden';
             document.querySelector('.resume-show').style.opacity = 1;
+        }
+        function closeResume() {
+            const resumeContent = document.querySelector('.resume');
+            resumeContent.style.opacity = 0;
+            resumeContent.classList.remove('resume-show');
+            document.body.style.overflow = 'visible';
+            document.title = 'Renato Lopes';
         }
         function copyEmail(email) {
             const emailCopy = document.querySelector('.email');
@@ -112,13 +120,6 @@
             setTimeout(() => {
                 emailCopy.classList.remove('email-show');
             }, "700");
-        }
-        function closeResume() {
-            const resumeContent = document.querySelector('.resume');
-            resumeContent.style.opacity = 0;
-            resumeContent.classList.remove('resume-show');
-            document.body.style.overflow = 'visible';
-            document.title = 'Renato Lopes';
         }
     </script>
 

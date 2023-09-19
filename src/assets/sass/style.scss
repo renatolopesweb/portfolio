@@ -168,11 +168,12 @@ header h1 span:nth-child(3){
     transform: translateY(0);
 }
 .btn{
-    font-size: 0.9rem;
-    padding: 25px 0;
     border-radius: var(--border-default);
     box-shadow: 3px 2px 3px #ccc;
+    cursor: pointer;
+    font-size: 0.9rem;
     margin: 20px 0;
+    padding: 25px 0;
 }
 .btn a{
     background-color: transparent;
@@ -259,6 +260,9 @@ article{
     }
     .about{
         padding: 20px;
+    }
+    .about p{
+        font-size: 0.9rem;
     }
     article{
         opacity: 1;
