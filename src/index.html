@@ -115,6 +115,7 @@
         function closeResume() {
             const resumeContent = document.querySelector('.resume');
             resumeContent.style.opacity = 0;
+            resumeContent.style.visibility = 'hidden';
             resumeContent.classList.remove('resume-show');
             document.body.style.overflow = 'visible';
             document.title = 'Nato·Lopes';
