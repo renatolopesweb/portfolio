@@ -105,6 +105,10 @@ header span{
     color: var(--color-white);
     grid-area: about;
 }
+.about article:last-child ul{
+    right: 0;
+    position: absolute;
+}
 .about article:last-child li{
     display: inline;
     margin-right: 10px;
