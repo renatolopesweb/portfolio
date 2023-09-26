@@ -12,8 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="robots" content="index, follow" />
-    <meta name="keywords"
-        content="Renato Lopes, Nato Lopes, Renato Lopes Web, renatolopes, renato lopes web, renato7lopes, renato_lopes_oliveira, webdesign, frontend, web, site, html, css, javascript" />
+    <meta name="keywords" content="Renato Lopes, Nato Lopes, Renato Lopes Web, renatolopes, renato lopes web, renato7lopes, renato_lopes_oliveira, webdesign, frontend, web, site, html, css, javascript" />
     <meta name="author" content="Renato Lopes" />
     <meta name="description" content="Profissional da web experiente em criação e gestão de Web-sites" />
     <meta property="og:url" content="https://www.natolopes.com.br/" />
@@ -28,6 +27,7 @@
     <style>@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;1000&display=swap");:root{--color-primary: #050A6B;--color-black: #000223;--color-white: #F9F9FB;--border-default: 3px}*{box-sizing:border-box;list-style-type:none;margin:0px;padding:0px;text-decoration:none;transition:0.3s}html,body{color:var(--color-black);font-family:'Nunito', sans-serif;scroll-behavior:smooth}h1{font-size:7rem;font-weight:lighter;font-weight:1000;text-transform:uppercase}p,li{font-size:1.1rem;line-height:40px}a{color:var(--color-primary);text-decoration:underline}.container{width:1200px;margin:auto;position:relative}header,section{display:grid;align-content:center}header{background-color:var(--color-white);height:100vh}header h2{font-size:3rem;font-weight:lighter;margin-left:3px}header span{color:var(--color-primary)}.header-style h1,.header-style h2{font-size:0;opacity:0}.about{display:grid;align-content:center;grid-template-columns:repeat(2, 1fr);grid-template-areas:"contact about";height:100vh}.about article{align-content:center;display:grid;height:100vh;padding:0 100px}.about article:first-child{display:flex;align-items:center;justify-content:space-around;background-color:#fff;grid-area:contact}.about article:first-child i:hover{transform:scale(1.4)}.about article:first-child i:active{transform:scale(1)}.about article:last-child{background-color:var(--color-primary);color:var(--color-white);grid-area:about}.about article:last-child ul{right:0;position:absolute}.about article:last-child li{display:inline;margin-right:10px}.about article:last-child a{color:var(--color-white);font-weight:bold}.about article i{font-size:4rem;margin-bottom:15px}.resume{align-content:center;background-color:var(--color-white);display:grid;height:100vh;opacity:0;position:absolute;top:0;transition:0.5s;transform:translateY(-200px);width:100%;z-index:1}.resume div{margin:auto;text-align:center}.resume h2{font-weight:900;text-transform:uppercase}.resume-show{opacity:0;transform:translateY(0)}.btn{border-radius:var(--border-default);box-shadow:3px 2px 3px var(--color-white);cursor:pointer;font-size:0.9rem;margin:20px 0;padding:25px 0}.btn a{background-color:transparent;text-decoration:none}.btn:hover{opacity:0.9}.btn-primary{background-color:var(--color-primary)}.btn-primary a{color:var(--color-white)}.btn-secondary{background-color:#d7d7d7;color:var(--color-primary)}@media (max-width: 992px){h1{font-size:2.6rem}.container{padding:0 10px;width:100%}header h2{font-size:1.8rem;margin:0}.about{grid-template-columns:1fr;grid-template-areas:"about" "contact";height:auto}.about article{padding:0 20px}}</style>
     <title>Nato·Lopes</title>
 </head>
+
 
 
 
@@ -52,8 +52,8 @@
             <i class="fas fa-user"></i>
             <p class="description"></p>
             <ul>
-                <li><a href="" class="flag-pt">PT</a></li>
-                <li><a href="" class="flag-en">EN</a></li>
+                <li><a href="#" class="flag-pt">PT</a></li>
+                <li><a href="#" class="flag-en">EN</a></li>
             </ul>
         </article>
     </section>
@@ -99,7 +99,7 @@
         //RESUME START
         if (document.URL.indexOf('https://natolopes.com.br/index.html#curriculo') >= 0) {
             document.querySelector('resume').innerHTML =
-                `
+            `
             <section class="resume resume-show" id="curriculo">
                 <div>
                     <h2>Currículo (Hard Skills)</h2>
