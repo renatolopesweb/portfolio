@@ -32,6 +32,9 @@ a{
 a:hover{
     text-decoration: underline;
 }
+.style-links-coments{
+    color: #999;
+}
 .hello{
     background-image: url(../images/bg-1.jpg);
   /*  background-position: center; */
