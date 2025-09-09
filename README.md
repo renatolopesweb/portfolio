@@ -1,8 +1,8 @@
-# Web-site Renato Lopes
--> https://natolopes.com.br
+# Live Link:
+-> https://renatolopesweb.github.io/portfolio/src/
 
 ### CSS
--> Sass / Grid CSS
+-> Sass / Grid CSS / Flexbox / FontAwesome
 
 ### JAVASCRIPT
 -> Pure 
