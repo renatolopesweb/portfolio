@@ -39,6 +39,12 @@ h1{
     font-optical-sizing: auto;
     font-weight: 900;
 }
+.lang{
+    font-size: .8rem;
+}
+.lang img{
+    width: 40px;
+}
 .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
@@ -68,7 +74,7 @@ h1{
 
 @media (max-width: 992px){
     .navbar{
-    height: 22vh;
+    height: 25vh;
 }
     h1{
         font-size: 2.3rem;
